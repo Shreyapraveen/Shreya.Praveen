@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+    <!-- Link to Google Fonts (Poppins Font) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="democss.css"> 
+</head>
+<body>
+    <!-- Intro Screen -->
+    <div id="intro-screen">
+        <div class="intro-content">
+            <h1 class="logo">PERSONAL PORTFOLIO</h1>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="content" >
+        <header>
+            <div class="container header-container">
+                <h1 class="logo">PERSONAL PORTFOLIO</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#portfolio-request">Create Portfolio</a></li>
+                    </ul>
+                </nav>
+                
+            </div>
+        </header>
+
+        <section id="hero">
+            <div class="hero-content">
+                <img src="https://img.freepik.com/premium-photo/cartoon-character-with-red-hair-white-shirt-that-says-name_983420-39583.jpg" class="hero-photo">
+               <div class="hero-text">
+                <h2>Hi, I'm <span class="name">NOVA LAWRENCE</span></h2>
+                <p>Web Developer | Designer | Programmer</p>
+                <a href="#projects" class="cta-btn">See My Work</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Hello! I'm a passionate web developer with a love for creating dynamic and user-friendly websites. With experience in HTML, CSS, JavaScript, and various frameworks, I aim to build high-quality and responsive web applications.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li>HTML & CSS</li>
+                    <li>JavaScript</li>
+                    <li>React.js</li>
+                    <li>Node.js</li>
+                    <li>Python</li>
+                    <li>Git & GitHub</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project-cards">
+                    <div class="project-card">
+                        <h3>Project 1</h3>
+                        <p>Website built using HTML, CSS, and JavaScript.</p>
+                        <button class="project-btn" onclick="window.location.href='https://your-project-link1.com'">View Details</button>
+                    </div>
+                    <div class="project-card">
+                        <h3>Project 2</h3>
+                        <p>Responsive e-commerce site with React and Node.js.</p>
+                        <button class="project-btn" onclick="window.location.href='https://your-project-link2.com'">View Details</button>
+                    </div>
+                    <div class="project-card">
+                        <h3>Project 3</h3>
+                        <p>Mobile app using Flutter for cross-platform development.</p>
+                        <button class="project-btn" onclick="window.location.href='https://your-project-link3.com'">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Info</h2>
+                <p>Email: <a href="mailto:hpsst-email@gmail.com">hpsst-email@gmail.com</a></p>
+                <p>Phone: +91 123 456 7890</p>
+                <p>Location: Bangalore, Karnataka</p>
+            </div>
+        </section>
+
+        <section id="portfolio-request">
+            <div class="container">
+                <h2>Create Your Portfolio</h2>
+                <p>If you are looking to create your personal portfolio, feel free to contact us by filling out the form below. We'll help you get started on showcasing your work.</p>
+                <form id="portfolio-form">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Request Portfolio</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 hpsst | All Rights Reserved</p>
+            </div>
+        </footer>
+    </div>
+    <div id="popup-notification" class="popup">
+        <div class="popup-content">
+            <span id="close-popup" class="popup-close-btn"> ×</span>
+            <p>Request Sent!</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
